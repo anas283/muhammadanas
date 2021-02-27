@@ -1,5 +1,39 @@
 @media only screen and (min-width: 1024px) {
+    .main-text {
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
     .w-cd {
-        width: 45%;
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .circle {
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .zigzag {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 }
