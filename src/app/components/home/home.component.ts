@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     }
 
 	openWork() {
-		this.router.navigateByUrl('/work-details');
+        this.router.navigate(['/work-details'], { queryParams: { work: 'preztel-dashboard' } });
 	}
 
 }

@@ -1,25 +1,38 @@
 <section class="bg-indigo-100 lg:px-16 mx-auto py-10 h-auto w-auto overflow-x-hidden">
     <h3 class="font-bold text-3xl text-center relative z-50">My latest work</h3>
     
-    <div class="flex flex-col relative z-50 px-4 mt-8">
-        <a 
-            routerLink="/work-details"
-            class="md:w-1/2 md:mx-auto cursor-pointer hover:shadow-xl duration-200">
-            <img class="rounded-md shadow-md" src="../../../assets/images/works/new_dashboard.png" alt="new_dashboard">
-        </a>
-        <a 
-            href="https://manage-landing-page-master-plum.vercel.app/" 
-            target="_blank"
-            class="md:w-1/2 md:mx-auto md:mt-4 cursor-pointer hover:shadow-xl duration-200">
-            <img class="rounded-md shadow-md mt-4" src="../../../assets/images/works/manage-landing-page.png" alt="manage">
-        </a>
-        <a 
-            href="https://sales-dashboard.netlify.app/" 
-            target="_blank"
-            class="md:w-1/2 md:mx-auto md:mt-4 cursor-pointer hover:shadow-xl duration-200">
-            <img class="rounded-md shadow-md mt-4" src="../../../assets/images/works/old_dashboard.png" alt="old_dashboard">
-        </a>
+    <div class="flex flex-col lg:grid lg:grid-cols-3 relative z-50 px-4 lg:px-0 mt-8">
+        <div 
+            (click)="openWorkDetails('preztel')"
+            class="md:w-1/2 md:mx-auto lg:m-2 lg:w-auto cursor-pointer hover:shadow-xl duration-200">
+            <img class="rounded-md shadow-md" src="../../../assets/images/works/dashboard-small.png" alt="new_dashboard">
+        </div>
+        <div 
+            (click)="openWorkDetails('manage')"
+            class="md:w-1/2 md:mx-auto lg:m-2 lg:w-auto md:mt-4 lg:mt-0 cursor-pointer hover:shadow-xl duration-200">
+            <img class="rounded-md shadow-md mt-4 lg:mt-2" src="../../../assets/images/works/manage-landing-page.png" alt="manage">
+        </div>
+        <div 
+            (click)="openWorkDetails('sales')"
+            class="md:w-1/2 md:mx-auto lg:m-2 lg:w-auto md:mt-4 lg:mt-0 cursor-pointer hover:shadow-xl duration-200">
+            <img class="rounded-md shadow-md mt-4 lg:mt-2" src="../../../assets/images/works/old_dashboard.png" alt="old_dashboard">
+        </div>
     </div>
+
+    <!-- <div 
+        href="https://manage-landing-page-master-plum.vercel.app/" 
+        target="_blank"
+        (click)="openWorkDetails('manage')"
+        class="md:w-1/2 md:mx-auto lg:m-2 lg:w-auto md:mt-4 lg:mt-0 cursor-pointer hover:shadow-xl duration-200">
+        <img class="rounded-md shadow-md mt-4 lg:mt-2" src="../../../assets/images/works/manage-landing-page.png" alt="manage">
+    </div>
+    <div 
+        href="https://sales-dashboard.netlify.app/" 
+        target="_blank"
+        (click)="openWorkDetails('sales')"
+        class="md:w-1/2 md:mx-auto lg:m-2 lg:w-auto md:mt-4 lg:mt-0 cursor-pointer hover:shadow-xl duration-200">
+        <img class="rounded-md shadow-md mt-4 lg:mt-2" src="../../../assets/images/works/old_dashboard.png" alt="old_dashboard">
+    </div> -->
 
     <div class="bg-indigo-100 w-screen h-screen absolute z-0 top-0 right-0"></div>
 </section>
