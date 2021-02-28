@@ -1,19 +1,21 @@
-.main-text {
-    animation: fadeInTop ease 1.3s;
+@media only screen and (max-width: 1024px) {    
+    .main-text {
+        animation: fadeInTop ease 1.3s;
+    }
+
+    @keyframes fadeInTop {
+        0% {
+            transform: translateY(-10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
 }
 
-@keyframes fadeInTop {
-    0% {
-        margin-top: -5%;
-        opacity: 0;
-    }
-    100% {
-        margin-top: 0%;
-        opacity: 1;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {    
     .main-text {
         width: 40%;
         margin: 0;
@@ -22,6 +24,18 @@
         left: 25%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        animation: fadeInTop ease 1.3s;
+    }
+
+    @keyframes fadeInTop {
+        0% {
+            margin-top: -5%;
+            opacity: 0;
+        }
+        100% {
+            margin-top: 0%;
+            opacity: 1;
+        }
     }
 
     .w-cd {
