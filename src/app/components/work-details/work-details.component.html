@@ -1,5 +1,5 @@
-<section class="h-screen px-4 lg:px-16 mx-auto py-10 w-auto overflow-x-hidden">
-    <h3 class="font-bold text-3xl text-center relative z-50">
+<section class="h-screen lg:h-full px-4 lg:max-w-6xl mx-auto py-10 w-auto">
+    <h3 class="font-bold text-3xl text-center">
         {{ title }}
     </h3>
 
@@ -22,16 +22,16 @@
             {{ description }}
         </p>
         <div *ngIf="title != 'Preztel Dashboard'" class="flex justify-center">
-            <button (click)="visitWork()" class="mt-4 px-10 py-2 rounded-md bg-indigo-600 text-white hover:bg-transparent hover:border-indigo-600 border-2 hover:text-indigo-600 duration-150 focus:outline-none">
+            <button (click)="visitWork()" class="mt-4 px-10 py-2 rounded-md bg-blue-500 text-white hover:bg-transparent border-transparent hover:border-blue-500 border-2 hover:text-indigo-600 duration-150 focus:outline-none">
                 Visit
             </button>
         </div>
     </div>
 
     <div>
-        <a routerLink="/" class="flex flex-row w-24 p-2 rounded-md hover:shadow-lg duration-150">
+        <button (click)="goBack()" class="flex flex-row w-24 p-2 rounded-md hover:shadow-lg duration-150">
             <img class="w-8 h-8" src="../../../assets/images/icons/arrow-back-outline.svg" alt="arrow">
             <span class="mx-2 my-1">back</span>
-        </a>
+        </button>
     </div>
 </section>

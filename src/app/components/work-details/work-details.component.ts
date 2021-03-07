@@ -1,5 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
 	selector: 'app-work-details',
@@ -14,7 +15,8 @@ export class WorkDetailsComponent implements OnInit {
 
 	constructor(
 		private router: Router,
-		private route: ActivatedRoute
+		private route: ActivatedRoute,
+		private _location: Location
 	) { }
 
 	ngOnInit(): void {
@@ -51,6 +53,10 @@ export class WorkDetailsComponent implements OnInit {
 
 	openAbout() {
 		this.router.navigateByUrl('/about');
+	}
+
+	goBack() {
+		this._location.back();
 	}
 
 }

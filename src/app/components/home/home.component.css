@@ -16,15 +16,15 @@
 }
 
 @media only screen and (min-width: 1024px) {    
-    .main-text {
-        width: 40%;
+    .left-content {
+        width: 50%;
         margin: 0;
         position: absolute;
         top: 50%;
-        left: 25%;
+        left: 33.5%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        animation: fadeInTop ease 1.3s;
+        /* animation: fadeInTop ease 1.3s; */
     }
 
     @keyframes fadeInTop {
@@ -38,17 +38,16 @@
         }
     }
 
-    .w-cd {
-        width: 40%;
+    .hero-img {
         margin: 0;
         position: absolute;
         top: 50%;
-        left: 75%;
+        left: 73%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
-    .circle {
+    /* .circle {
         margin: 0;
         position: absolute;
         top: 70%;
@@ -64,5 +63,5 @@
         left: 35%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-    }
+    } */
 }

@@ -1,25 +1,27 @@
 <div>
     <!-- MAIN SECTION -->
-    <section class="p-5 h-screen">
-        <div>
-            <h1 class="text-4xl font-bold w-64 mt-10">
+    <section class="p-5 h-screen lg:flex lg:flex-row max-w-6xl mx-auto">
+        <div class="left-content lg:h-72">
+            <h1 class="text-5xl text-center lg:text-left lg:break-words mx-auto lg:mx-0 font-bold w-64 lg:w-full mt-10">
                 Hey! I’m a
                 <span class="text-blue-500">Front-end</span>
                 Developer
             </h1>
-            <p class="text-gray-500 mt-4">
+            <p class="text-gray-500 mx-auto lg:mx-0 text-center lg:text-left mt-4 md:w-3/5 lg:w-10/12">
                 My name is Anas, my expertise is in the area of frontend development. 
                 With every line of code, I strive to make the web a beautiful place.
             </p>
-            <button
-                (click)="scroll(work)"
-                class="px-6 py-3 bg-blue-500 text-white mt-5 border-transparent border-2 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 duration-200 focus:outline-none">
-                View my work
-            </button>
+            <div class="flex justify-center lg:justify-start">
+                <button
+                    (click)="scroll(work)"
+                    class="px-6 py-3 rounded-md bg-blue-500 text-white mt-5 lg:mt-7 border-transparent border-2 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 duration-200 focus:outline-none">
+                    View my work
+                </button>
+            </div>
         </div>
     
-        <div>
-            <img class="mt-16" src="../../../assets/images/hero-image.svg" alt="hero">
+        <div class="flex justify-center lg:justify-end">
+            <img class="hero-img mt-16 lg:h-64 lg:mt-0 md:w-3/5 lg:w-3/4" src="../../../assets/images/hero-image.svg" alt="hero">
         </div>
     </section>
     <!-- MAIN SECTION -->
@@ -28,15 +30,15 @@
     <section #work class="bg-blue-100 py-16">
         <div>
             <h3 class="font-bold text-3xl text-center">My latest work</h3>
-            <p class="text-center text-gray-600 text-sm mt-1">
+            <!-- <p class="text-center text-gray-600 text-sm mt-1">
                 All source code are available on 
                 <a class="underline" href="https://github.com/anas283" target="_blank">
                     GitHub
                 </a>
-            </p>
+            </p> -->
         </div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 lg:px-0 mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 px-4 mt-8 lg:px-28">
             <div 
                 (click)="openWorkDetails('preztel')"
                 class="sm:m-2 lg:w-auto cursor-pointer hover:shadow-xl duration-200">
