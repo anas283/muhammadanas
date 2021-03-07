@@ -1,9 +1,9 @@
-<section class="bg-indigo-100 px-4 lg:px-16 mx-auto py-10 h-auto w-auto overflow-x-hidden">
+<section class="h-screen px-4 lg:px-16 mx-auto py-10 w-auto overflow-x-hidden">
     <h3 class="font-bold text-3xl text-center relative z-50">
         {{ title }}
     </h3>
 
-    <div class="flex flex-row relative z-50 mt-8">
+    <div class="flex flex-row mt-8">
         <div>
             <img (click)="openAbout()" class="w-12 h-12 rounded-full cursor-pointer" src="../.././../assets/images/profile-anas.jpg" alt="anas">
         </div>
@@ -13,9 +13,11 @@
         </div>
     </div>
 
-    <img class="relative z-50 rounded-lg mt-8" [src]="image" alt="dashboard">
+    <div class="bg-blue-100 p-2 mt-6">
+        <img class="rounded-lg" [src]="image" alt="dashboard">
+    </div>
 
-    <div class="relative z-50 mx-auto mt-8 pb-10">
+    <div class="mx-auto mt-6 pb-10">
         <p class="mt-4 text-center">
             {{ description }}
         </p>
@@ -26,6 +28,10 @@
         </div>
     </div>
 
-
-    <div class="bg-indigo-100 w-screen h-screen absolute z-0 top-0 right-0"></div>
+    <div>
+        <a routerLink="/" class="flex flex-row w-24 p-2 rounded-md hover:shadow-lg duration-150">
+            <img class="w-8 h-8" src="../../../assets/images/icons/arrow-back-outline.svg" alt="arrow">
+            <span class="mx-2 my-1">back</span>
+        </a>
+    </div>
 </section>
