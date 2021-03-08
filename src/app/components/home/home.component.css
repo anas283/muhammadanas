@@ -1,3 +1,7 @@
-.animate__delay {
-    animation-delay: .5s;
+.animate__delay_1 {
+    animation-delay: .3s;
+}
+
+.animate__delay_2 {
+    animation-delay: .6s;
 }
